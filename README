@@ -1,0 +1,34 @@
+# Overview
+
+This charms aims at deploying DeepDetect, an open source deep learning server and API
+See https://github.com/beniz/deepdetect
+
+Note: this is a CPU-only version at the moment
+
+# Usage
+
+Once you have juju installed, 
+
+    juju deploy deepdetect
+    juju expose deepdetect
+
+
+You can then use the API against http://ip-address:8080. 
+
+## Scale out Usage
+
+N/A at the moment
+
+## Known Limitations and Issues
+
+* Simple deployment with minimal options
+
+# Configuration
+
+* enable_gpu, stuck to `cpu` for now
+
+# Contact Information
+## Upstream Project Name
+
+- http://www.deepdetect.com/
+- Charm Maintainer: Emmanuel Benazera <beniz@droidnik.fr>

@@ -1,0 +1,17 @@
+name: deepdetect
+summary: open source deep learning server and API
+maintainer: Emmanuel Benazera <beniz@droidnik.fr>
+description: |
+    open source deep learning server and API
+    http://www.deepdetect.com
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://juju.ubuntu.com/docs/authors-charm-metadata.html#charm-metadata
+  - misc
+subordinate: false
+provides:
+  deepdetect:
+    interface: http
+requires:
+  client:
+    interface: elasticsearch
